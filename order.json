@@ -1,0 +1,25 @@
+{
+  "items":[
+    {
+      "itemName":"pizza",
+      "itemId":"1111-1111",
+      "quantity":2,
+      "price": 19.99
+    },
+    {
+      "itemName":"hot dog",
+      "itemId":"2222-2222",
+      "quantity":1,
+      "price": 1.99
+    }
+  ],
+  "deliveryInfo" :{
+    "userId":"user_1",
+    "firstName": "Alex",
+    "lastName":"Lee",
+    "phoneNumber":"888-8888",
+    "address": {
+    }
+  },
+  "note": "no mustard on hot dog"
+}
