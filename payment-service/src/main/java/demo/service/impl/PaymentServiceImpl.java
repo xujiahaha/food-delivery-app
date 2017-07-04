@@ -64,7 +64,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void updateOrderStatusAfterPayment(String orderId, OrderStatusUpdateMessage orderStatusUpdateMessage) {
-        String url = "http://localhost:8989/api/order/";
+        String url = "http://localhost:8989/order/";
         restTemplate.postForLocation(url+orderId, orderStatusUpdateMessage);
     }
 

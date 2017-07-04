@@ -33,7 +33,7 @@ public class RestaurantInfoController {
         return getRestaurantResourceList(this.restaurantInfoService.findAllRestaurant());
     }
 
-    // ------------ Get restaurants by contain given name ----------------------------------------------------------
+    // ------------ Get restaurants by given name ----------------------------------------------------------
 
     @RequestMapping(value = "/restaurant", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody

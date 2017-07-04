@@ -4,7 +4,7 @@
       "itemName":"pizza",
       "itemId":"1111-1111",
       "quantity":2,
-      "price": 19.99
+      "price": 19.98
     },
     {
       "itemName":"hot dog",
@@ -15,8 +15,8 @@
   ],
   "deliveryInfo" :{
     "userId":"user_1",
-    "firstName": "Alex",
-    "lastName":"Lee",
+    "firstName": "Emma",
+    "lastName":"Wang",
     "phoneNumber":"888-8888",
     "address": {
     }

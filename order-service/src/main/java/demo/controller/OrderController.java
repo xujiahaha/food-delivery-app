@@ -49,6 +49,7 @@ public class OrderController {
     // ----------- Place order ------------------------------------------------------------------------
 
     @RequestMapping(value = "/order", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public Order placeOrder(@RequestBody Order order) {
         return this.orderService.saveOrder(order);
@@ -56,7 +57,7 @@ public class OrderController {
 
     // ----------- update order status ------------------------------------------------------------------------
 
-    @RequestMapping(value = "/api/order/{orderId}", method = RequestMethod.POST)
+    @RequestMapping(value = "/order/{orderId}", method = RequestMethod.POST)
     public void updateOrderStatus(@PathVariable("orderId") String orderId,
                                   @RequestBody OrderStatusUpdateMessage orderStatusUpdateMessage) {
         this.orderService.updateOrderStatus(orderId, orderStatusUpdateMessage);
